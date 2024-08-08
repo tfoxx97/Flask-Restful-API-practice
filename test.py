@@ -22,7 +22,6 @@ test1_data = {"name": "sesame chicken with sticky asian sauce",
                                                     toss in the sauce to coat. Cook for 1-2 minutes. Turn off the heat and divide \
                                                         between four bowls. Serve with boiled rice and top with sesame seeds and \
                                                             spring onions."}
-test2_data = {"name": "fish", "ingredients": {"1/2 cup": "soy sauce"}, "instructions": "turn on heat for 320f."}
 
 response = requests.put(BASE + "recipes/1", 
                         data=json.dumps(test1_data), 
