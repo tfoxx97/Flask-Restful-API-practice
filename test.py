@@ -31,3 +31,26 @@ print(response.status_code, response.json())
 
 response = requests.get(BASE)
 print(response.status_code, response.json())
+
+# Full test requirements:
+# Categories:
+# GET all categories YES
+# Add (POST) a category YES
+# GET one category YES
+# Update (PUT) a category (change name) YES
+# Delete category YES
+# **possible feature: (delete ALL recipes belonging to category along with DELETE category request)
+
+# Recipes:
+# GET all recipes YES
+# add a recipe YES, verify get all recipes YES 
+# GET all recipes belonging to one category YES
+# GET a recipe by recipe's id YES
+# update (PUT) a recipe, verify update with get recipes belonging to category YES
+# DELETE a recipe, verify update with get recipes belonging to category YES
+
+#Ingredients:
+# GET all ingredients belonging to one recipe YES
+# POST add ingredient(s)?, verify updated with GET recipe by id call YES
+# update (PUT) an ingredient (quantity and name), verify updated with GET recipe by id call YES
+# DELETE an ingredient, verify updated with GET recipe by id call YES
